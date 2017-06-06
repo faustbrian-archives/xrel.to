@@ -1,7 +1,7 @@
 {
     "name": "faustbrian/xrel",
     "description": "A xREL.to Client for PHP",
-    "keywords": ["api", "faustbrian", "faustbrian-xrel", "xrel", "Brian Faust", "faustbrian"],
+    "keywords": ["api", "xrel.to", "Brian Faust", "faustbrian"],
     "license": "MIT",
     "authors": [{
         "name": "Brian Faust",
