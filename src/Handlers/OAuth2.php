@@ -11,12 +11,12 @@
 
 namespace BrianFaust\xREL\Handlers;
 
-use GuzzleHttp\Handler\CurlHandler;
 use GuzzleHttp\HandlerStack;
-use League\OAuth2\Client\Provider\GenericProvider;
+use GuzzleHttp\Handler\CurlHandler;
 use League\OAuth2\Client\Token\AccessToken;
 use Somoza\OAuth2Middleware\OAuth2Middleware;
 use Somoza\OAuth2Middleware\TokenService\Bearer;
+use League\OAuth2\Client\Provider\GenericProvider;
 
 /**
  * Class OAuth2.
