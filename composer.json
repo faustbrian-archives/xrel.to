@@ -9,14 +9,13 @@
         "homepage": "https://brianfaust.me"
     }],
     "require": {
-        "php": "^7.0",
-        "faustbrian/http": "^1.0@dev",
+        "php": "^7.1",
+        "faustbrian/http": "^1.0",
         "somoza/oauth2-client-middleware": "^0.3.0"
     },
     "require-dev": {
-        "mockery/mockery": "^0.9.9",
-        "phpunit/phpunit": "^6.2",
-        "symfony/var-dumper": "^3.3"
+        "mockery/mockery": "^1.0",
+        "phpunit/phpunit": "^6.5"
     },
     "autoload": {
         "psr-4": {
