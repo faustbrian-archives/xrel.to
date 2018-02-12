@@ -13,12 +13,12 @@ declare(strict_types=1);
 
 namespace BrianFaust\xREL\Handlers;
 
-use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Handler\CurlHandler;
+use GuzzleHttp\HandlerStack;
+use League\OAuth2\Client\Provider\GenericProvider;
 use League\OAuth2\Client\Token\AccessToken;
 use Somoza\OAuth2Middleware\OAuth2Middleware;
 use Somoza\OAuth2Middleware\TokenService\Bearer;
-use League\OAuth2\Client\Provider\GenericProvider;
 
 /**
  * Class OAuth2.
