@@ -5,15 +5,15 @@ declare(strict_types=1);
 /*
  * This file is part of xREL.to PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\xREL\API;
+namespace Plients\xREL\API;
 
-use BrianFaust\Http\HttpResponse;
+use Plients\Http\HttpResponse;
 
 class Search extends AbstractAPI
 {
@@ -25,7 +25,7 @@ class Search extends AbstractAPI
      * @param bool   $scene
      * @param bool   $p2p
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function releases(string $q, int $limit = 25, bool $scene = true, bool $p2p = false): HttpResponse
     {
@@ -39,7 +39,7 @@ class Search extends AbstractAPI
      * @param string $type
      * @param int    $limit
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function extInfo(string $q, string $type, int $limit = 25): HttpResponse
     {

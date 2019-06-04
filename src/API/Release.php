@@ -5,15 +5,15 @@ declare(strict_types=1);
 /*
  * This file is part of xREL.to PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\xREL\API;
+namespace Plients\xREL\API;
 
-use BrianFaust\Http\HttpResponse;
+use Plients\Http\HttpResponse;
 
 class Release extends AbstractAPI
 {
@@ -22,7 +22,7 @@ class Release extends AbstractAPI
      *
      * @param string $id
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function info(string $id): HttpResponse
     {
@@ -37,7 +37,7 @@ class Release extends AbstractAPI
      * @param int    $filter
      * @param int    $per_page
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function latest(string $archive = null, int $page = 1, int $filter = 0, int $per_page = 25): HttpResponse
     {
@@ -47,7 +47,7 @@ class Release extends AbstractAPI
     /**
      * Returns a list of available release categories.
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function categories(): HttpResponse
     {
@@ -62,7 +62,7 @@ class Release extends AbstractAPI
      * @param int    $per_page
      * @param int    $page
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function browseCategory(string $ext_info_type, string $category_name = 'TOPMOVIE', int $page = 1, int $per_page = 25): HttpResponse
     {
@@ -76,7 +76,7 @@ class Release extends AbstractAPI
      * @param int    $per_page
      * @param int    $page
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function productReleases(string $id, int $page = 1, int $per_page = 25): HttpResponse
     {
@@ -86,7 +86,7 @@ class Release extends AbstractAPI
     /**
      * Returns a list of public, predefined release filters. You can use the filter ID in release/latest.
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function filters(): HttpResponse
     {
@@ -99,7 +99,7 @@ class Release extends AbstractAPI
      * @param string $id
      * @param string $image
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function addProof(string $id, string $image): HttpResponse
     {

@@ -5,15 +5,15 @@ declare(strict_types=1);
 /*
  * This file is part of xREL.to PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\xREL\API;
+namespace Plients\xREL\API;
 
-use BrianFaust\Http\HttpResponse;
+use Plients\Http\HttpResponse;
 
 class P2P extends AbstractAPI
 {
@@ -26,7 +26,7 @@ class P2P extends AbstractAPI
      * @param int    $page
      * @param int    $per_page
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function releases(string $ext_info_id = null, string $category_id = null, string $group_id = null, int $page = 1, int $per_page = 25): HttpResponse
     {
@@ -36,7 +36,7 @@ class P2P extends AbstractAPI
     /**
      * Returns a list of available P2P release categories and their IDs.
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function categories(): HttpResponse
     {
@@ -48,7 +48,7 @@ class P2P extends AbstractAPI
      *
      * @param string $id
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function release(string $id): HttpResponse
     {

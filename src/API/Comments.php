@@ -5,15 +5,15 @@ declare(strict_types=1);
 /*
  * This file is part of xREL.to PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\xREL\API;
+namespace Plients\xREL\API;
 
-use BrianFaust\Http\HttpResponse;
+use Plients\Http\HttpResponse;
 
 class Comments extends AbstractAPI
 {
@@ -25,7 +25,7 @@ class Comments extends AbstractAPI
      * @param int    $page
      * @param int    $per_page
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function get(string $id, string $type, int $page = 1, int $per_page = 25): HttpResponse
     {

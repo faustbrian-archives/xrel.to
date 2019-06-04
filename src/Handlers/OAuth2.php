@@ -5,13 +5,13 @@ declare(strict_types=1);
 /*
  * This file is part of xREL.to PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\xREL\Handlers;
+namespace Plients\xREL\Handlers;
 
 use GuzzleHttp\Handler\CurlHandler;
 use GuzzleHttp\HandlerStack;

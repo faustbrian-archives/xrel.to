@@ -5,22 +5,22 @@ declare(strict_types=1);
 /*
  * This file is part of xREL.to PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\xREL\API;
+namespace Plients\xREL\API;
 
-use BrianFaust\Http\HttpResponse;
+use Plients\Http\HttpResponse;
 
 class Favorites extends AbstractAPI
 {
     /**
      * Returns a list of all the current user's favorite lists.
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function lists(): HttpResponse
     {
@@ -33,7 +33,7 @@ class Favorites extends AbstractAPI
      * @param string $id
      * @param bool   $get_releases
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function entries(string $id, bool $get_releases = false): HttpResponse
     {
@@ -53,7 +53,7 @@ class Favorites extends AbstractAPI
      * @param string $id
      * @param string $ext_info_id
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function add(string $id, string $ext_info_id): HttpResponse
     {
@@ -66,7 +66,7 @@ class Favorites extends AbstractAPI
      * @param string $id
      * @param string $ext_info_id
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function delete(string $id, string $ext_info_id): HttpResponse
     {
@@ -80,7 +80,7 @@ class Favorites extends AbstractAPI
      * @param string $release_id
      * @param string $type
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function mark(string $id, string $release_id, string $type): HttpResponse
     {

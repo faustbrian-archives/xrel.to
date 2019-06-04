@@ -1,13 +1,19 @@
 {
-    "name": "faustbrian/xrel-php-client",
+    "name": "plients/xrel",
     "description": "A xREL.to Client for PHP",
-    "keywords": ["api", "http", "xrel.to"],
+    "keywords": [
+        "api",
+        "http",
+        "xrel.to"
+    ],
     "license": "MIT",
-    "authors": [{
-        "name": "Brian Faust",
-        "email": "hello@brianfaust.me",
-        "homepage": "https://brianfaust.me"
-    }],
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "hello@basecode.sh",
+            "homepage": "https://basecode.sh"
+        }
+    ],
     "require": {
         "php": "^7.1",
         "faustbrian/http": "^1.0",
@@ -19,13 +25,13 @@
     },
     "autoload": {
         "psr-4": {
-            "BrianFaust\\xREL\\": "src",
-            "BrianFaust\\Http\\": "HTTP/src"
+            "Plients\\xREL\\": "src",
+            "Plients\\Http\\": "HTTP/src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BrianFaust\\Tests\\xREL\\": "tests"
+            "Plients\\Tests\\xREL\\": "tests"
         }
     },
     "config": {

@@ -5,15 +5,15 @@ declare(strict_types=1);
 /*
  * This file is part of xREL.to PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\xREL;
+namespace Plients\xREL;
 
-use BrianFaust\Http\Http;
+use Plients\Http\Http;
 
 class Client
 {
@@ -32,7 +32,7 @@ class Client
      *
      * @param string $name
      *
-     * @return \BrianFaust\xREL\API\AbstractAPI
+     * @return \Plients\xREL\API\AbstractAPI
      */
     public function api(string $name): API\AbstractAPI
     {
@@ -40,7 +40,7 @@ class Client
 
         $client = Http::withBaseUri('https://api.xrel.to/v2/')->withHandler($handler->create());
 
-        $class = "BrianFaust\\xREL\\API\\{$name}";
+        $class = "Plients\\xREL\\API\\{$name}";
 
         return new $class($client);
     }
